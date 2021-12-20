@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   public demoVariable:any = "gaurav";
-  
+  public demoVariable1:any = "varuna";
 }
