@@ -1,0 +1,14 @@
+app-menu{
+    float: left;
+    margin-top: 30px;
+}
+.router-container{
+    float: right;
+    border: 1px solid black;
+    width: 86%;
+    height: 500px;
+    margin-top: 30px;
+}
+app-header{
+    border-bottom: 1px dashed black;
+}
