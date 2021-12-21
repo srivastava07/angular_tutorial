@@ -1,1 +1,13 @@
 <b>cart page</b>
+
+
+<button (click)="getDataFunction()">CLICK</button>
+
+
+<div class="container" *ngIf="userArray">
+    <ul>
+        <li *ngFor="let singleUser of userArray">
+            Email: {{singleUser.email}}, First Name: {{singleUser.first_name}}, Last Name: {{singleUser.last_name}}
+        </li>
+    </ul>
+</div>
