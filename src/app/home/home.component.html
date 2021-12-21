@@ -1,4 +1,14 @@
 <h1>Home</h1>
-
+<button *ngIf="isShown">Control Me</button>
+<button *ngIf="demoVariable == 'varuna'">Control Me1</button>
 <input ([ngModule])="demoVariable" type="text" />{{ demoVariable }}
 <input ([ngModule])="demoVariable1" type="text" />{{ demoVariable1 }}
+<button (click)="toggle()">Click me</button>
+{{isShown}}
+<ul>
+    <li *ngFor="let singleElement of arr">
+      {{ singleElement.key }} kuch bhi
+      {{singleElement.model}}
+    </li>
+</ul>
+
