@@ -1,2 +1,17 @@
-Product is here
-<a [routerLink]="'/users'">Go to users</a>
+<h1>Product</h1>
+
+{{ arrayVAR }} <br>
+
+<button type="button" (click)="getStatus()">GET AGENT STATUS</button>
+<br><br><br>
+
+<button *ngIf="status == 'pending'">PENDING</button>
+<button *ngIf="status == 'approved'">Approved</button>
+<button *ngIf="status == 'rejected'">REJECTED</button>
+<br><br><br>
+
+<ul>
+
+    <li *ngFor="let singleEle of arrayVAR; let ab = index">{{ab+1}} * 5 = {{singleEle}}</li>
+
+</ul>
