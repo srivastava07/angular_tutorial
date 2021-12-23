@@ -1,0 +1,12 @@
+<p>Test</p>
+<ul>
+    <li *ngFor="let value of name; let i=index">
+        {{i+1}}
+        <div *ngIf="value.name!=undefined">
+            <b> name: </b> {{value.name}};
+        </div>
+        <div *ngIf="value.age!=undefined">
+            <b>age:</b>{{value.age}}
+        </div>
+    </li>
+</ul>

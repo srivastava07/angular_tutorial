@@ -20,7 +20,7 @@ export class ProductComponent {
 
   prepareArray(){
     for (let index = 1; index < 11; index++) {
-      this.arrayVAR.push(5*index);      
+      this.arrayVAR.push(6*index);      
     }
   }
 
