@@ -16,6 +16,8 @@ import { CommonModule } from '@angular/common';
 import { TableComponent } from './Table/table.component';
 import { TestComponent } from './test/test.component';
 import { GroupComponent } from './group/group.component';
+import { CommonService } from './services/common.service';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { GroupComponent } from './group/group.component';
     LoginFormComponent,
     TableComponent,
     TestComponent,
-    GroupComponent
+    GroupComponent,
+    FormComponent
     ],
   imports: [
     BrowserModule,
@@ -40,7 +43,7 @@ import { GroupComponent } from './group/group.component';
     CommonModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [CommonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
