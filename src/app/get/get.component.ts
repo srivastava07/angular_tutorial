@@ -1,5 +1,6 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-get',
@@ -9,7 +10,7 @@ import { Component } from '@angular/core';
 export class GetComponent {
   title = 'SecondProject';
   public apiData:any=""
-  constructor(public http: HttpClient) { 
+  constructor(public http: HttpClient,public domSanitizer: DomSanitizer) { 
 
 }
 ngOnInit(){

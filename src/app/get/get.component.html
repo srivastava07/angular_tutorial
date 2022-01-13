@@ -1,22 +1,36 @@
-<h2>Table data from GeT api</h2>
-    <table>
+<div class="container">
+  <div class="col-md-12">
+    <div class="pull-left"> <h2>Table data from GeT api</h2></div>
+    <div class="pull-right"><button type="button" class="btn btn-success">Add</button></div>
+    <table class="table">
+      <thead>
         <tr>
-            <th>ID</th>
-            <th>Email</th>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Avatar</th>
-          </tr>
-         
-      
-                
-                    <tr *ngFor="let person of apiData.data"> 
-                    <td>  {{ person.id }}</td>
-                    <td> {{ person.email }} </td>
-                    <td> {{ person.first_name }} </td>
-                    <td> {{ person.last_name}} </td>
-                  <td><img src=" {{person.avatar}}" /></td>
-                
-                </tr>
+          <th>ID</th>
+          <th>Email</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Avatar</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+
+
+        <tr *ngFor="let person of apiData.data">
+          <td> {{ person.id }}</td>
+          <td> {{ person.email }} </td>
+          <td> {{ person.first_name }} </td>
+          <td> {{ person.last_name}} </td>
+          <td><img [src]="domSanitizer.bypassSecurityTrustUrl(person.avatar)" /></td>
+          <td>
+            <button type="button" class="btn btn-primary">View</button>
+            <button type="button" class="btn btn-info">Edit</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+          </td>
+
+        </tr>
+      </tbody>
 
     </table>
+  </div>
+</div>
