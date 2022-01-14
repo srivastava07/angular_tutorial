@@ -8,7 +8,7 @@ import { ServiceService } from '../service/service.services';
   styleUrls: ['./copy.component.css']
 })
 export class CopyComponent {
-  title = 'SecondProject';
+  title = 'Copy';
   public email:any="";
   public psw:any=""
   public pswrepeat:any=""

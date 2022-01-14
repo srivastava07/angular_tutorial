@@ -1,0 +1,24 @@
+ody>
+    <form class="modal-content" action="/action_page.php">
+        <div class="container">
+         
+          <p>Edit The Form.</p>
+          <hr>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" [(ngModel)]="email" name="email" >
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" [(ngModel)]="psw" name="psw" >
+    
+          <label for="pswrepeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" [(ngModel)]="pswrepeat" name="pswrepeat" >
+          
+             
+    
+          <div class="clearfix">
+      
+            <button type="button"  (click)="edit();">Edit</button>
+          </div>
+        </div>
+      </form>
+  
