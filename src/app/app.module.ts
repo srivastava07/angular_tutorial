@@ -12,6 +12,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ServiceService } from './service/service.services';
 import { TableComponent } from './table/table.component';
 import { TestComponent } from './test/test.component';
+import { UpdateComponent } from './update/update.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TestComponent } from './test/test.component';
     MenuComponent,
     CopyComponent,
     TableComponent,
-    GetComponent
+    GetComponent,
+    UpdateComponent
     
   ],
   imports: [
